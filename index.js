@@ -12,7 +12,7 @@
     },
   });*/
 
-  document.addEventListener('DOMContentLoaded', function() {
+
     const mySwiper = new Swiper('.image-slider', {
       //navigation: {
         //nextEl: '.swiper-button-next',
@@ -23,5 +23,5 @@
         clickable: true,
       },
     });
-  });
+
 
