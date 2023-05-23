@@ -1,27 +1,21 @@
-/*new Swiper('.image-slider',{
-    navigation: {
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button-prev'
-    },
-});
 
-  let mySwiper = new Swiper('.image-slider', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });*/
-
-
-    const mySwiper = new Swiper('.image-slider', {
-      //navigation: {
-        //nextEl: '.swiper-button-next',
-        //prevEl: '.swiper-button-prev',
-     // },  
+    new Swiper('.image-slider', {
+   
+        loop: true, 
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
     });
 
+    new Swiper(".products-swiper", {
+      loop: true,
+      slidesPerView: 5,
+      spaceBetween: 10,
+    
+      navigation: {
+        nextEl: ".swiper-button-next-products",
+        prevEl: ".swiper-button-prev-products",
+      },
+    });
 

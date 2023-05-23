@@ -150,6 +150,7 @@
 
 .image-slider {
     position: relative;
+    width: 100%;
 }
 
 .image-slider_wrapper {
@@ -164,19 +165,127 @@
   max-width: 100%;
 }
 
-
 .image-slider .swiper-pagination-bullet {
    width: 20px;
    height: 20px;
    line-height: 20px;
    font-size: 14px;
-   background-color: #fff;
-
+   background-color:#F16A50;
  
+}
+
+.image-slider .image-container {
+position: absolute;
+bottom: 450px;
+left: 400px;
+
+}
+
+.image-title {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+text-transform: uppercase;
+
+color: #F8F1EA;
+}
+
+.image-slider-button {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+  width: 227px;
+height: 52px;
+box-sizing: border-box;
+border: 2px solid #F8F1EA;
+position: absolute;
+left: 590px;
+}
+.image-slider-button:hover {
+  background: #F16A50;
+}
+
+ .image-slider-button-text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.products {
+  padding: 70px 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+text-transform: uppercase;
+
+color: #000000;
+  }
+}
+
+.products-swiper-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.products-swiper {
+  width: 100%;
+}
+
+.products-card {
+  max-width: 224px;
+  border: 1px solid #f8f1ea;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.products-status-text {
+  max-width: 60px;
+  text-align: center;
+  padding: 4px 5px;
+  background-color: #f16a50;
+}
+
+.products-item {
+  text-align: center;
+      padding: 0 10px 20px;
+
+      &-title {
+        margin: 18px 0 10px;
+      }
+}
+
+.products-button {
+  text-align: center;
+  margin-top: 50px;
 
   
-   
-}
-.image-slider .swiper-pagination-bullet:active {
-    background-color: #F16A50;
+ &-text {
+  padding: 5px 40px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
  }
+}
+
