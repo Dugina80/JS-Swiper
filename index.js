@@ -14,8 +14,19 @@
       spaceBetween: 10,
     
       navigation: {
-        nextEl: ".swiper-button-next-products",
-        prevEl: ".swiper-button-prev-products",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    new Swiper(".partners-swiper", {
+      loop: true,
+      slidesPerView: 9,
+      spaceBetween: 18,
+    
+      navigation: {
+        nextEl: ".swiper-button-next-partners",
+        prevEl: ".swiper-button-prev-partners",
       },
     });
 

@@ -42,7 +42,7 @@
   color: #000000;
 }
 .header li:hover {
-  color: #F16A50;
+  color: #f16a50;
 }
 .header-icon {
   display: -webkit-box;
@@ -129,7 +129,7 @@
 }
 
 .footer-container_block-list li:hover {
-  color: #F16A50;
+  color: #f16a50;
 }
 
 .contacts {
@@ -168,7 +168,7 @@
   font-size: 26px;
   line-height: 32px;
   margin-left: -90px;
-  color: #F8F1EA;
+  color: #f8f1ea;
 }
 
 .contacts-social_icons {
@@ -184,7 +184,7 @@
 }
 
 .contacts-social_icons svg:hover {
-  stroke: #F16A50;
+  stroke: #f16a50;
 }
 
 .image-slider {
@@ -205,10 +205,10 @@
   height: 20px;
   line-height: 20px;
   font-size: 14px;
-  background-color: #F16A50;
+  background-color: #f16a50;
 }
 
-.image-slider .image-container {
+.image-container {
   position: absolute;
   bottom: 450px;
   left: 400px;
@@ -222,7 +222,10 @@
   line-height: 61px;
   text-align: center;
   text-transform: uppercase;
-  color: #F8F1EA;
+  color: #f8f1ea;
+  position: absolute;
+  bottom: -10px;
+  left: 400px;
 }
 
 .image-slider-button {
@@ -232,13 +235,13 @@
   height: 52px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid #F8F1EA;
+  border: 2px solid #f8f1ea;
   position: absolute;
   left: 590px;
 }
 
 .image-slider-button:hover {
-  background: #F16A50;
+  background: #f16a50;
 }
 
 .image-slider-button-text {
@@ -249,20 +252,21 @@
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .products {
   padding: 70px 0;
+  width: 100%;
 }
 .products-title {
   text-align: center;
-  margin-bottom: 50px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -297,12 +301,39 @@
   background-color: #f16a50;
 }
 
-.products-item {
+.products-status-sold {
+  max-width: 60px;
+  background-color: #f8f1ea;
+  color: #000;
+}
+
+.products-item-title {
+  margin: 18px 0 10px;
+}
+
+.products-description {
   text-align: center;
   padding: 0 10px 20px;
 }
-.products-item-title {
-  margin: 18px 0 10px;
+
+.price-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.products-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
 }
 
 .products-button {
@@ -319,6 +350,68 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/next-active.svg");
+  background-size: cover;
+}
+
+.partners {
+  padding: 70px 0;
+  width: 100%;
+  background-color: #F8F1EA;
+}
+.partners-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.partners-swiper {
+  width: 90%;
+}
+
+.partners-swiper-container {
+  position: relative;
+  margin: 0 20px;
+}
+
+.swiper-button-next-partners {
+  position: absolute;
+  left: 95%;
+  bottom: 10px;
+}
+
+.swiper-button-prev-partners {
+  position: absolute;
+  bottom: 10px;
+}
+
+.partners-icon {
+  width: 100px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
 * {
